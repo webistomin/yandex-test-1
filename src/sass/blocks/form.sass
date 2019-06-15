@@ -1,0 +1,128 @@
+.form
+  /* Border */
+  +m('border')
+    +m('all')
+      border: 3px solid var(--color-border)
+
+  /* View */
+  +m('view')
+    +m('default')
+      background-color: var(--color-accent)
+
+  +e('item')
+    /* Border */
+    +m('border')
+      &:not(:last-of-type)
+        border-bottom: 1px solid var(--color-border)
+
+    /* distribute */
+    +m('distribute')
+      display: flex
+
+      +m('between')
+        justify-content: space-between
+
+    /* vertical align */
+    +m('vertical-align')
+      display: flex
+      +m('center')
+        align-items: center
+
+    /* indent */
+    +m('indent-b')
+      +m('xxxs')
+        margin-bottom: var(--space-xxxs)
+
+      +m('xxs')
+        margin-bottom: var(--space-xxs)
+
+      +m('s')
+        margin-bottom: var(--space-s)
+
+      +m('m')
+        margin-bottom: var(--space-m)
+
+      +m('l')
+        margin-bottom: var(--space-l)
+
+      +m('xl')
+        margin-bottom: var(--space-xl)
+
+      +m('xxl')
+        margin-bottom: var(--space-xxl)
+
+      +m('xxxl')
+        margin-bottom: var(--space-xxxl)
+
+    /* space horizontal */
+    +m('space-h')
+      +m('xxxs')
+        padding-left: var(--space-xxxs)
+        padding-right: var(--space-xxxs)
+
+      +m('xxs')
+        padding-left: var(--space-xxs)
+        padding-right: var(--space-xxs)
+
+      +m('s')
+        padding-left: var(--space-s)
+        padding-right: var(--space-s)
+
+      +m('m')
+        padding-left: var(--space-m)
+        padding-right: var(--space-m)
+
+      +m('l')
+        padding-left: var(--space-l)
+        padding-right: var(--space-l)
+
+      +m('xl')
+        padding-left: var(--space-xl)
+        padding-right: var(--space-xl)
+
+      +m('xxl')
+        padding-left: var(--space-xxl)
+        padding-right: var(--space-xxl)
+
+      +m('xxxl')
+        padding-left: var(--space-xxxl)
+        padding-right: var(--space-xxxl)
+
+    /* space vertical */
+    +m('space-v')
+      +m('xxxs')
+        padding-top: var(--space-xxxs)
+        padding-bottom: var(--space-xxxs)
+
+      +m('xxs')
+        padding-top: var(--space-xxs)
+        padding-bottom: var(--space-xxs)
+
+      +m('s')
+        padding-top: var(--space-s)
+        padding-bottom: var(--space-s)
+
+      +m('m')
+        padding-top: var(--space-m)
+        padding-bottom: var(--space-m)
+
+      +m('l')
+        padding-top: var(--space-l)
+        padding-bottom: var(--space-l)
+
+      +m('xl')
+        padding-top: var(--space-xl)
+        padding-bottom: var(--space-xl)
+
+      +m('xxl')
+        padding-top: var(--space-xxl)
+        padding-bottom: var(--space-xxl)
+
+      +m('xxxl')
+        padding-top: var(--space-xxxl)
+        padding-bottom: var(--space-xxxl)
+
+  +e('label')
+    +m('width')
+      +m('default')
+        width: 35%
