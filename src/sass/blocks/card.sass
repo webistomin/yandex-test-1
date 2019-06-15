@@ -2,12 +2,12 @@
 
   /* Border */
   +m('border')
-    +m('all')
+    +v('all')
       border: 3px solid var(--color-border)
 
   /* View */
   +m('view')
-    +m('default')
+    +v('default')
       background-color: var(--color-accent)
 
   +e('content')
@@ -15,27 +15,27 @@
     /* distribute */
     +m('distribute')
       display: flex
-      +m('center')
+      +v('center')
         justify-content: center
 
     /* vertical align */
     +m('vertical-align')
       display: flex
-      +m('center')
+      +v('center')
         align-items: center
 
     /* space */
     +m('space-a')
-      +m('m')
+      +v('m')
         padding: var(--space-m)
 
-      +m('l')
+      +v('l')
         padding: var(--space-l)
 
-      +m('xl')
+      +v('xl')
         padding: var(--space-xl)
 
-      +m('xxl')
+      +v('xxl')
         padding: var(--space-xxl)
 
 
@@ -48,36 +48,36 @@
 
     /* Distribute */
     +m('distribute')
-      +m('between')
+      +v('between')
         justify-content: space-between
 
-      +m('center')
+      +v('center')
         justify-content: center
 
-      +m('right')
+      +v('right')
         justify-content: flex-end
 
     /* Vertical align */
     +m('vertical-align')
-      +m('center')
+      +v('center')
         align-items: center
 
-      +m('top')
+      +v('top')
         align-items: flex-start
 
-      +m('bottom')
+      +v('bottom')
         align-items: flex-end
 
     /* Space */
     +m('space-a')
-      +m('m')
+      +v('m')
         padding: var(--space-m)
 
-      +m('l')
+      +v('l')
         padding: var(--space-l)
 
-      +m('xl')
+      +v('xl')
         padding: var(--space-xl)
 
-      +m('xxl')
+      +v('xxl')
         padding: var(--space-xxl)

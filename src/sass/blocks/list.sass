@@ -2,60 +2,60 @@
 
   /* Border */
   +m('border')
-    +m('all')
+    +v('all')
       border: 1px solid var(--color-border)
 
   /* View */
   +m('view')
-    +m('default')
+    +v('default')
       background-color: var(--color-accent)
 
   +e('item')
     /* Border */
     +m('border')
-      +m('bottom')
+      +v('bottom')
         border-bottom: 1px solid var(--color-border)
 
-      +m('top')
+      +v('top')
         border-top: 1px solid var(--color-border)
 
     /* distribute */
     +m('distribute')
       display: flex
-      +m('between')
+      +v('between')
         justify-content: space-between
 
     /* vertical align */
     +m('vertical-align')
       display: flex
-      +m('center')
+      +v('center')
         align-items: center
 
     /* indent top */
     +m('indent-t')
-      +m('m')
+      +v('m')
         margin-top: var(--space-m)
 
     /* indent bottom */
     +m('indent-b')
-      +m('s')
+      +v('s')
         margin-bottom: var(--space-s)
 
-      +m('m')
+      +v('m')
         margin-bottom: var(--space-m)
 
-      +m('l')
+      +v('l')
         margin-bottom: var(--space-l)
 
-      +m('xl')
+      +v('xl')
         margin-bottom: var(--space-xl)
 
     /* space bottom */
     +m('space-b')
-      +m('s')
+      +v('s')
         padding-bottom: var(--space-s)
 
     /* space all */
     +m('space-a')
-      +m('l')
+      +v('l')
         padding: var(--space-l)

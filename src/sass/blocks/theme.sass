@@ -1,7 +1,7 @@
 .theme
   /* COLORS */
   +m('color')
-    +m('default')
+    +v('default')
       --color-primary: var(--color-white)
       --color-accent: var(--color-blue)
       --color-border: var(--color-black)
@@ -10,7 +10,7 @@
       --color-text-tertiary: var(--color-black-3)
       --color-link: var(--color-lightblue)
 
-    +m('project-brand')
+    +v('project-brand')
       --color-primary: var(--color-lightblue)
       --color-accent: var(--color-white)
       --color-border: var(--color-white)
@@ -19,7 +19,7 @@
       --color-text-tertiary: var(--color-white-3)
       --color-link: var(--color-white)
 
-    +m('project-inverse')
+    +v('project-inverse')
       --color-primary: var(--color-black)
       --color-accent: var(--color-white)
       --color-border: var(--color-white)
@@ -28,7 +28,7 @@
       --color-text-tertiary: var(--color-white-3)
       --color-link: var(--color-lightblue)
 
-    +m('project-inverse')
+    +v('project-inverse')
       --color-primary: var(--color-black)
       --color-accent: var(--color-white)
       --color-border: var(--color-white)
@@ -37,7 +37,7 @@
       --color-text-tertiary: var(--color-white-3)
       --color-link: var(--color-lightblue)
 
-    +m('project-warning')
+    +v('project-warning')
       --color-primary: var(--color-orange)
       --color-accent: var(--color-white)
       --color-border: var(--color-white)
@@ -46,7 +46,7 @@
       --color-text-tertiary: var(--color-white-3)
       --color-link: var(--color-white)
 
-    +m('megafon-brand')
+    +v('megafon-brand')
       --color-primary: var(--color-green-brand)
       --color-accent: var(--color-white)
       --color-border: var(--color-white)
@@ -57,69 +57,69 @@
 
   /* SIZES */
   +m('size')
-    +m('default')
+    +v('default')
       font-size: initial
       line-height: initial
 
-    +m('s')
+    +v('s')
       font-size: var(--font-size-s)
       line-height: var(--line-height-s)
 
-    +m('m')
+    +v('m')
       font-size: var(--font-size-m)
       line-height: var(--line-height-m)
 
-    +m('l')
+    +v('l')
       font-size: var(--font-size-l)
       line-height: var(--line-height-l)
 
-    +m('xl')
+    +v('xl')
       font-size: var(--font-size-xl)
       line-height: var(--line-height-xl)
 
-    +m('xxl')
+    +v('xxl')
       font-size: var(--font-size-xxl)
       line-height: var(--line-height-xxl)
 
   /* SPACES */
   +m('space')
-    +m('default')
+    +v('default')
       padding: initial
 
-    +m('xxxs')
+    +v('xxxs')
       padding: var(--space-xxxs)
 
-    +m('xxs')
+    +v('xxs')
       padding: var(--space-xxs)
 
-    +m('xs')
+    +v('xs')
       padding: var(--space-xs)
 
-    +m('s')
+    +v('s')
       padding: var(--space-s)
 
-    +m('m')
+    +v('m')
       padding: var(--space-m)
 
-    +m('l')
+    +v('l')
       padding: var(--space-l)
 
-    +m('xl')
+    +v('xl')
       padding: var(--space-xl)
 
-    +m('xxl')
+    +v('xxl')
       padding: var(--space-xxl)
 
-    +m('xxxl')
+    +v('xxxl')
       padding: var(--space-xxxl)
 
-    +m('xxxxl')
+    +v('xxxxl')
       padding: var(--space-xxxxl)
 
 
   /* BREAKPOINTS */
   +m('breakpoint')
-    +m('default')
+    +v('default')
       display: flex
       flex-direction: column
 
@@ -128,7 +128,7 @@
 
   /* GAPS */
   +m('gap')
-    +m('small')
+    +v('small')
       margin: var(--gap-default)
 
       +media(var(--breakpoint-desktop))

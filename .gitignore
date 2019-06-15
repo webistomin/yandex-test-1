@@ -8,7 +8,6 @@ bower_components/
 
 # Dev/Build
 /dist/
-/build/
 *.rar
 *.zip
 /linters/

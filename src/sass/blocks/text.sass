@@ -1,12 +1,12 @@
 .text
   /* align */
   +m('align')
-    +m('center')
+    +v('center')
       text-align: center
 
   /* size */
   +m('size')
-    +m('s')
+    +v('s')
       font-size: var(--font-size-s)
 
       .text__word
@@ -21,7 +21,7 @@
         &_width_l
           width: 100px
 
-    +m('m')
+    +v('m')
       font-size: var(--font-size-m)
 
       .text__word
@@ -36,7 +36,7 @@
         &_width_l
           width: 114px
 
-    +m('l')
+    +v('l')
       font-size: var(--font-size-l)
 
       .text__word
@@ -51,7 +51,7 @@
         &_width_l
           width: 138px
 
-    +m('xl')
+    +v('xl')
       font-size: var(--font-size-xl)
 
       .text__word
@@ -66,7 +66,7 @@
         &_width_l
           width: 154px
 
-    +m('xxl')
+    +v('xxl')
       font-size: var(--font-size-xxl)
 
       .text__word
@@ -83,28 +83,28 @@
 
   /* type */
   +m('type')
-    +m('h1')
+    +v('h1')
       margin: 15px 0 21px
 
-    +m('h2')
+    +v('h2')
       margin: 48px 0 20px
 
-    +m('h3')
+    +v('h3')
       margin: 43px 0 0
 
-    +m('p')
+    +v('p')
       margin: 15px 0 21px
 
   /* view */
   +m('view')
-    +m('primary')
+    +v('primary')
       color: var(--color-text-primary)
 
-    +m('secondary')
+    +v('secondary')
       color: var(--color-text-secondary)
 
-    +m('ghost')
+    +v('ghost')
       color: var(--color-text-tertiary)
 
-    +m('link')
+    +v('link')
       color: var(--color-link)

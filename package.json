@@ -1,0 +1,23 @@
+{
+  "name": "yandex-test-1",
+  "version": "1.0.0",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "del": "^4.1.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-imagemin": "^6.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sequence": "^1.0.0",
+    "gulp-strip-css-comments": "^2.0.0"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "ie >= 11",
+    "> 0.5% in RU"
+  ]
+}

@@ -3,59 +3,59 @@
 
   /* Columns */
   +m('xs-columns')
-    +m('3')
+    +v('3')
       grid-column: var(--grid-columns-xs-3)
 
   +m('s-columns')
-    +m('3')
+    +v('3')
       grid-column: var(--grid-columns-s-3)
 
-    +m('6')
+    +v('6')
       grid-column: var(--grid-columns-s-6)
 
   +m('m-columns')
-    +m('10')
+    +v('10')
       grid-column: var(--grid-columns-m-10)
 
-    +m('12')
+    +v('12')
       grid-column: var(--grid-columns-m-12)
 
   /* Gaps */
   +m('col-gap')
-    +m('two-thirds')
+    +v('two-thirds')
       grid-column-gap: calc(100% * (2 / 3))
 
-    +m('full')
+    +v('full')
       grid-column-gap: 100%
 
   +m('row-gap')
-    +m('half')
+    +v('half')
       grid-column-gap: 50%
 
-    +m('full')
+    +v('full')
       grid-column-gap: 100%
 
   +e('fraction')
 
     /* Column width */
     +m('xs-col')
-      +m('3')
+      +v('3')
         grid-auto-columns: 3fr
 
     +m('m-col')
-      +m('2')
+      +v('2')
         grid-auto-columns: 2fr
 
-      +m('3')
+      +v('3')
         grid-auto-columns: 3fr
 
-      +m('4')
+      +v('4')
         grid-auto-columns: 4fr
 
-      +m('5')
+      +v('5')
         grid-auto-columns: 5fr
 
-      +m('8')
+      +v('8')
         grid-auto-columns: 8fr
 
 
