@@ -1,0 +1,110 @@
+.text
+  /* align */
+  +m('align')
+    +m('center')
+      text-align: center
+
+  /* size */
+  +m('size')
+    +m('s')
+      font-size: var(--font-size-s)
+
+      .text__word
+        height: 7px
+        /* width */
+        &_width_s
+          width: 20px
+
+        &_width_m
+          width: 48px
+
+        &_width_l
+          width: 100px
+
+    +m('m')
+      font-size: var(--font-size-m)
+
+      .text__word
+        height: 8px
+        /* width */
+        &_width_s
+          width: 24px
+
+        &_width_m
+          width: 56px
+
+        &_width_l
+          width: 114px
+
+    +m('l')
+      font-size: var(--font-size-l)
+
+      .text__word
+        height: 10px
+        /* width */
+        &_width_s
+          width: 28px
+
+        &_width_m
+          width: 68px
+
+        &_width_l
+          width: 138px
+
+    +m('xl')
+      font-size: var(--font-size-xl)
+
+      .text__word
+        height: 11px
+        /* width */
+        &_width_s
+          width: 32px
+
+        &_width_m
+          width: 74px
+
+        &_width_l
+          width: 154px
+
+    +m('xxl')
+      font-size: var(--font-size-xxl)
+
+      .text__word
+        height: 13px
+        /* width */
+        &_width_s
+          width: 36px
+
+        &_width_m
+          width: 88px
+
+        &_width_l
+          width: 184px
+
+  /* type */
+  +m('type')
+    +m('h1')
+      margin: 15px 0 21px
+
+    +m('h2')
+      margin: 48px 0 20px
+
+    +m('h3')
+      margin: 43px 0 0
+
+    +m('p')
+      margin: 15px 0 21px
+
+  /* view */
+  +m('view')
+    +m('primary')
+      color: var(--color-text-primary)
+
+    +m('secondary')
+      color: var(--color-text-secondary)
+
+    +m('ghost')
+      color: var(--color-text-tertiary)
+
+    +m('link')
+      color: var(--color-link)
