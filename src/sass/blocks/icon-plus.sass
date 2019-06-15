@@ -1,0 +1,21 @@
+.icon-plus
+
+  /* Vertical align */
+  +m('vertical-align')
+    +m('center')
+      display: flex
+      align-items: center
+
+  +e('icon')
+    /* indent right */
+    +m('indent-r')
+      +m('s')
+        margin-right: var(--space-s)
+
+      +m('m')
+        margin-right: var(--space-m)
+
+    /* indent left */
+    +m('indent-r')
+      +m('l')
+        margin-right: var(--space-l)
