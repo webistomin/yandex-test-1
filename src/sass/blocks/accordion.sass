@@ -1,0 +1,23 @@
+.accordion
+
+  +e('button')
+    width: 100%
+    color: var(--color-text-primary)
+    background-color: var(--color-accent)
+    cursor: pointer
+
+    /* space */
+    +m('space-a')
+      +m('m')
+        padding: var(--space-m)
+
+  +e('list')
+    max-height: 0
+    overflow: hidden
+    transition: max-height 0.2s ease-out
+
+    /* space horizontal */
+    +m('space-h')
+      +m('m')
+        padding-left: var(--space-m)
+        padding-right: var(--space-m)
