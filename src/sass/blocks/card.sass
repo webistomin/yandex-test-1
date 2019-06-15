@@ -1,0 +1,83 @@
+.card
+
+  /* Border */
+  +m('border')
+    +m('all')
+      border: 1px solid var(--color-border)
+
+  /* View */
+  +m('view')
+    +m('default')
+      background-color: var(--color-accent)
+
+  +e('content')
+
+    /* distribute */
+    +m('distribute')
+      +m('center')
+        display: flex
+        justify-content: space-between
+
+    /* vertical align */
+    +m('vertical-align')
+      +m('center')
+        display: flex
+        align-items: center
+
+    /* space */
+    +m('space-a')
+      +m('m')
+        padding: var(--space-m)
+
+      +m('l')
+        padding: var(--space-l)
+
+      +m('xl')
+        padding: var(--space-xl)
+
+      +m('xxl')
+        padding: var(--space-xxl)
+
+
+  +e('footer')
+    display: flex
+    position: absolute
+    bottom: 0
+    left: 0
+    width: 100%
+
+    /* Distribute */
+    +m('distribute')
+      +m('between')
+        justify-content: space-between
+
+      +m('center')
+        justify-content: center
+
+      +m('right')
+        justify-content: flex-end
+
+    /* Vertical align */
+    +m('vertical-align')
+      +m('center')
+        align-items: center
+
+      +m('top')
+        align-items: flex-start
+
+      +m('bottom')
+        align-items: flex-end
+
+    /* Space */
+    +m('space-a')
+      +m('m')
+        padding: var(--space-m)
+
+      +m('l')
+        padding: var(--space-l)
+
+      +m('xl')
+        padding: var(--space-xl)
+
+      +m('xxl')
+        padding: var(--space-xxl)
