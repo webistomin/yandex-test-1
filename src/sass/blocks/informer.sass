@@ -1,0 +1,43 @@
+.informer
+
+  +e('content')
+    display: flex
+
+    /* Distribute */
+    +m('distribute')
+      +m('default')
+        justify-content: initial
+
+      +m('between')
+        justify-content: space-between
+
+      +m('center')
+        justify-content: center
+
+    /* space all */
+    +m('space-a')
+      +m('xl')
+        padding: var(--space-xl)
+
+      +m('xxl')
+        padding: var(--space-xxl)
+
+  +e('action')
+    /* Distribute */
+    +m('distribute')
+      +m('default')
+        justify-content: initial
+
+      +m('between')
+        justify-content: space-between
+
+      +m('center')
+        justify-content: center
+
+    /* space all */
+    +m('space-a')
+      +m('xl')
+        padding: var(--space-xl)
+
+      +m('xxl')
+        padding: var(--space-xxl)
