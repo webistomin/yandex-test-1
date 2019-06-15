@@ -1,0 +1,61 @@
+.list
+
+  /* Border */
+  +m('border')
+    +m('all')
+      border: 1px solid var(--color-border)
+
+  /* View */
+  +m('view')
+    +m('default')
+      background-color: var(--color-accent)
+
+  +e('item')
+    /* Border */
+    +m('border')
+      +m('bottom')
+        border-bottom: 1px solid var(--color-border)
+
+      +m('top')
+        border-top: 1px solid var(--color-border)
+
+    /* distribute */
+    +m('distribute')
+      display: flex
+      +m('between')
+        justify-content: space-between
+
+    /* vertical align */
+    +m('vertical-align')
+      display: flex
+      +m('center')
+        align-items: center
+
+    /* indent top */
+    +m('indent-t')
+      +m('m')
+        margin-top: var(--space-m)
+
+    /* indent bottom */
+    +m('indent-b')
+      +m('s')
+        margin-bottom: var(--space-s)
+
+      +m('m')
+        margin-bottom: var(--space-m)
+
+      +m('l')
+        margin-bottom: var(--space-l)
+
+      +m('xl')
+        margin-bottom: var(--space-xl)
+
+    /* space bottom */
+    +m('space-b')
+      +m('s')
+        padding-bottom: var(--space-s)
+
+    /* space all */
+    +m('space-a')
+      +m('l')
+        padding: var(--space-l)
