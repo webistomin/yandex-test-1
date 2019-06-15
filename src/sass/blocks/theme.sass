@@ -1,0 +1,135 @@
+.theme
+  /* COLORS */
+  +m('color')
+    +m('default')
+      --color-primary: var(--color-white)
+      --color-accent: var(--color-blue)
+      --color-border: var(--color-black)
+      --color-text-primary: var(--color-black)
+      --color-text-secondary: var(--color-black-6)
+      --color-text-tertiary: var(--color-black-3)
+      --color-link: var(--color-lightblue)
+
+    +m('project-brand')
+      --color-primary: var(--color-lightblue)
+      --color-accent: var(--color-white)
+      --color-border: var(--color-white)
+      --color-text-primary: var(--color-white)
+      --color-text-secondary: var(--color-white-6)
+      --color-text-tertiary: var(--color-white-3)
+      --color-link: var(--color-white)
+
+    +m('project-inverse')
+      --color-primary: var(--color-black)
+      --color-accent: var(--color-white)
+      --color-border: var(--color-white)
+      --color-text-primary: var(--color-black)
+      --color-text-secondary: var(--color-white-6)
+      --color-text-tertiary: var(--color-white-3)
+      --color-link: var(--color-lightblue)
+
+    +m('project-inverse')
+      --color-primary: var(--color-black)
+      --color-accent: var(--color-white)
+      --color-border: var(--color-white)
+      --color-text-primary: var(--color-black)
+      --color-text-secondary: var(--color-white-6)
+      --color-text-tertiary: var(--color-white-3)
+      --color-link: var(--color-lightblue)
+
+    +m('project-warning')
+      --color-primary: var(--color-orange)
+      --color-accent: var(--color-white)
+      --color-border: var(--color-white)
+      --color-text-primary: var(--color-white)
+      --color-text-secondary: var(--color-white-6)
+      --color-text-tertiary: var(--color-white-3)
+      --color-link: var(--color-white)
+
+    +m('megafon-brand')
+      --color-primary: var(--color-green-brand)
+      --color-accent: var(--color-white)
+      --color-border: var(--color-white)
+      --color-text-primary: var(--color-white)
+      --color-text-secondary: var(--color-white-6)
+      --color-text-tertiary: var(--color-white-3)
+      --color-link: var(--color-white)
+
+  /* SIZES */
+  +m('size')
+    +m('default')
+      font-size: initial
+      line-height: initial
+
+    +m('s')
+      font-size: var(--font-size-s)
+      line-height: var(--line-height-s)
+
+    +m('m')
+      font-size: var(--font-size-m)
+      line-height: var(--line-height-m)
+
+    +m('l')
+      font-size: var(--font-size-l)
+      line-height: var(--line-height-l)
+
+    +m('xl')
+      font-size: var(--font-size-xl)
+      line-height: var(--line-height-xl)
+
+    +m('xxl')
+      font-size: var(--font-size-xxl)
+      line-height: var(--line-height-xxl)
+
+  /* SPACES */
+  +m('space')
+    +m('default')
+      padding: initial
+
+    +m('xxxs')
+      padding: var(--space-xxxs)
+
+    +m('xxs')
+      padding: var(--space-xxs)
+
+    +m('xs')
+      padding: var(--space-xs)
+
+    +m('s')
+      padding: var(--space-s)
+
+    +m('m')
+      padding: var(--space-m)
+
+    +m('l')
+      padding: var(--space-l)
+
+    +m('xl')
+      padding: var(--space-xl)
+
+    +m('xxl')
+      padding: var(--space-xxl)
+
+    +m('xxxl')
+      padding: var(--space-xxxl)
+
+    +m('xxxxl')
+      padding: var(--space-xxxxl)
+
+
+  /* BREAKPOINTS */
+  +m('breakpoint')
+    +m('default')
+      display: flex
+      flex-direction: column
+
+      +media(var(--breakpoint-desktop))
+        flex-direction: row
+
+  /* GAPS */
+  +m('gap')
+    +m('small')
+      margin: var(--gap-default)
+
+      +media(var(--breakpoint-desktop))
+        --gap-default: var(--space-xxxl)
