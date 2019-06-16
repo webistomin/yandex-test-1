@@ -825,13 +825,13 @@ picture {
     margin: 43px 0 0; }
   .text_type_p {
     margin: 15px 0 21px; }
-  .text_view_primary {
+  .text_view_primary .text__word {
     background-color: var(--color-text-primary); }
-  .text_view_secondary {
+  .text_view_secondary .text__word {
     background-color: var(--color-text-secondary); }
-  .text_view_ghost {
+  .text_view_ghost .text__word {
     background-color: var(--color-text-tertiary); }
-  .text_view_link {
+  .text_view_link .text__word {
     background-color: var(--color-link); }
 
 .avatar {
@@ -962,14 +962,20 @@ picture {
   .warning__button {
     width: 200px; }
   .warning__placeholder {
-    margin-top: 16px;
+    margin-top: 20px;
     margin-bottom: 16px; }
   .warning__title {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     width: 100%;
-    max-width: 440px;
-    margin-bottom: 16px;
-    margin-top: 12px; }
-  .warning__subtitle {
-    width: 100%;
-    max-width: 260px;
+    padding-top: 12px;
+    margin-top: -18px;
     margin-bottom: 40px; }
+    .warning__title .text__word {
+      margin-top: 18px; }
