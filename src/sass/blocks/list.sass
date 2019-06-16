@@ -3,21 +3,24 @@
   /* Border */
   +m('border')
     +v('all')
-      border: 1px solid var(--color-border)
+      border: 3px solid var(--color-border)
 
   /* View */
   +m('view')
     +v('default')
-      background-color: var(--color-accent)
+      background-color: var(--color-primary)
 
   +e('item')
+    display: flex
     /* Border */
     +m('border')
       +v('bottom')
-        border-bottom: 1px solid var(--color-border)
+        &:not(:last-of-type)
+          border-bottom: 3px solid var(--color-border)
 
       +v('top')
-        border-top: 1px solid var(--color-border)
+        &:not(:last-of-type)
+          border-top: 3px solid var(--color-border)
 
     /* distribute */
     +m('distribute')

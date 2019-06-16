@@ -1,0 +1,30 @@
+.history
+  max-width: 754px
+  width: 100%
+  box-sizing: border-box
+
+  +e('label')
+    margin-right: 20px
+
+  +e('date')
+    margin-bottom: 10px
+
+  +e('show')
+    display: flex
+
+  +e('open')
+    margin-left: auto
+
+  +e('text')
+    display: flex
+
+    &:not(:last-of-type)
+      margin-bottom: 16px
+
+  +e('description')
+    padding-top: 26px
+    flex-direction: column
+
+  +e('actions')
+    margin-top: 30px
+    margin-bottom: 10px

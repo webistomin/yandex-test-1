@@ -1,3 +1,22 @@
 "use strict";
 
-var vb = 431242;
+var body = document.body;
+
+var openAccordion = function openAccordion(accordion) {
+  var list = accordion.querySelector('.e-accordion__list');
+
+  if (list.style.maxHeight) {
+    list.style.maxHeight = null;
+  } else {
+    list.style.maxHeight = "".concat(list.scrollHeight, "px");
+  }
+};
+
+body.addEventListener('click', function (event) {
+  var target = event.target;
+  var currentTarget = event.currentTarget;
+  var accordion = target.closest('.e-accordion');
+  if (!accordion) return;
+  if (!currentTarget.contains(accordion)) return;
+  openAccordion(accordion);
+});
