@@ -290,21 +290,6 @@
   </div>
 </section>
 
-<script>
-  var coll = document.querySelectorAll(".e-accordion");
-  var list = document.querySelectorAll(".e-accordion__list");
-  var i;
-  
-  coll.forEach((item, index) => {
-    item.addEventListener('click', () => {
-      const content = list[index];
-      if (content.style.maxHeight){
-        content.style.maxHeight = null;
-      } else {
-        content.style.maxHeight = content.scrollHeight + "px";
-      }
-    })
-  });
-</script>
+<script src='script.js'></script>
 </body>
 </html>
