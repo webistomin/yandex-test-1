@@ -522,30 +522,25 @@ picture {
   .form_view_default {
     background-color: var(--color-accent); }
   .form__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     
     
     
     
     
      }
-    .form__item_border:not(:last-of-type) {
-      border-bottom: 1px solid var(--color-border); }
-    .form__item_distribute {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex; }
-      .form__item_distribute_between {
-        -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-        justify-content: space-between; }
-    .form__item_vertical-align {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex; }
-      .form__item_vertical-align_center {
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center; }
+    .form__item_border_bottom:not(:last-of-type) {
+      border-bottom: 3px solid var(--color-border); }
+    .form__item_distribute_between {
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between; }
+    .form__item_vertical-align_center {
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
     .form__item_indent-b_xxxs {
       margin-bottom: var(--space-xxxs); }
     .form__item_indent-b_xxs {
@@ -810,13 +805,13 @@ picture {
   .text_type_p {
     margin: 15px 0 21px; }
   .text_view_primary {
-    color: var(--color-text-primary); }
+    background-color: var(--color-text-primary); }
   .text_view_secondary {
-    color: var(--color-text-secondary); }
+    background-color: var(--color-text-secondary); }
   .text_view_ghost {
-    color: var(--color-text-tertiary); }
+    background-color: var(--color-text-tertiary); }
   .text_view_link {
-    color: var(--color-link); }
+    background-color: var(--color-link); }
 
 .avatar {
   background-color: var(--color-text-primary);
@@ -860,6 +855,7 @@ picture {
     height: 72px; }
 
 .button {
+  cursor: pointer;
   background-color: var(--color-accent);
   
    }
@@ -877,6 +873,7 @@ picture {
     width: 100%; }
 
 .input {
+  border: 3px solid var(--color-border);
   width: 100%;
    }
   .input_size_s {
@@ -912,3 +909,17 @@ picture {
   .accordion__list_space-h_m {
     padding-left: var(--space-m);
     padding-right: var(--space-m); }
+
+.payment {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  max-width: 556px; }
+  .payment__button {
+    width: 200px; }
+  .payment__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .payment__label {
+    margin-right: 40px; }

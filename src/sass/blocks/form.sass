@@ -10,21 +10,20 @@
       background-color: var(--color-accent)
 
   +e('item')
+    display: flex
     /* Border */
     +m('border')
-      &:not(:last-of-type)
-        border-bottom: 1px solid var(--color-border)
+      +v('bottom')
+        &:not(:last-of-type)
+          border-bottom: 3px solid var(--color-border)
 
     /* distribute */
     +m('distribute')
-      display: flex
-
       +v('between')
         justify-content: space-between
 
     /* vertical align */
     +m('vertical-align')
-      display: flex
       +v('center')
         align-items: center
 
