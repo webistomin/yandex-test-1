@@ -1,0 +1,23 @@
+.product
+  box-sizing: border-box
+  width: 218px
+  min-height: 280px
+
+  &.theme_color_project-inverse
+    .product__image
+      img
+        filter: invert(1)
+
+  +e('image')
+    display: flex
+    align-items: center
+    justify-content: center
+    background-color: var(--color-text-primary)
+    height: 160px
+    box-sizing: border-box
+
+  +e('footer')
+    flex-direction: column
+
+  +e('description')
+    margin-top: 16px

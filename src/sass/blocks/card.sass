@@ -1,4 +1,5 @@
 .card
+  position: relative
 
   /* Border */
   +m('border')
@@ -8,7 +9,7 @@
   /* View */
   +m('view')
     +v('default')
-      background-color: var(--color-accent)
+      background-color: var(--color-primary)
 
   +e('content')
 
@@ -45,6 +46,7 @@
     bottom: 0
     left: 0
     width: 100%
+    box-sizing: border-box
 
     /* Distribute */
     +m('distribute')

@@ -300,15 +300,7 @@ picture {
     --color-primary: var(--color-black);
     --color-accent: var(--color-white);
     --color-border: var(--color-white);
-    --color-text-primary: var(--color-black);
-    --color-text-secondary: var(--color-white-6);
-    --color-text-tertiary: var(--color-white-3);
-    --color-link: var(--color-lightblue); }
-  .theme_color_project-inverse {
-    --color-primary: var(--color-black);
-    --color-accent: var(--color-white);
-    --color-border: var(--color-white);
-    --color-text-primary: var(--color-black);
+    --color-text-primary: var(--color-white);
     --color-text-secondary: var(--color-white-6);
     --color-text-tertiary: var(--color-white-3);
     --color-link: var(--color-lightblue); }
@@ -436,12 +428,13 @@ picture {
       grid-auto-columns: 8fr; }
 
 .card {
+  position: relative;
   
    }
   .card_border_all {
     border: 3px solid var(--color-border); }
   .card_view_default {
-    background-color: var(--color-accent); }
+    background-color: var(--color-primary); }
   .card__content {
     
     
@@ -478,6 +471,8 @@ picture {
     bottom: 0;
     left: 0;
     width: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
     
     
      }
@@ -979,3 +974,33 @@ picture {
     margin-bottom: 40px; }
     .warning__title .text__word {
       margin-top: 18px; }
+
+.product {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 218px;
+  min-height: 280px; }
+  .product.theme_color_project-inverse .product__image img {
+    -webkit-filter: invert(1);
+    filter: invert(1); }
+  .product__image {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background-color: var(--color-text-primary);
+    height: 160px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+  .product__footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .product__description {
+    margin-top: 16px; }
