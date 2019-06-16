@@ -873,6 +873,8 @@ picture {
     width: 100%; }
 
 .input {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
   border: 3px solid var(--color-border);
   width: 100%;
    }
@@ -911,6 +913,8 @@ picture {
     padding-right: var(--space-m); }
 
 .payment {
+  margin: auto;
+  width: 100%;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   max-width: 556px; }
