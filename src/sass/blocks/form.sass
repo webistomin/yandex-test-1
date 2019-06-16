@@ -11,6 +11,9 @@
 
   +e('item')
     display: flex
+    flex-wrap: wrap
+    width: 100%
+    box-sizing: border-box
     /* Border */
     +m('border')
       +v('bottom')
@@ -125,3 +128,14 @@
     +m('width')
       +v('default')
         width: 35%
+
+  +e('control')
+    display: flex
+
+    +m('width')
+      +v('default')
+        width: 100%
+
+    +m('vertical-align')
+      +v('center')
+        align-items: center
