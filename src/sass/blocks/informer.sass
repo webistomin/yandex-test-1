@@ -1,5 +1,9 @@
 .informer
 
+  +m('view')
+    +v('default')
+      background-color: var(--color-primary)
+
   +e('content')
     display: flex
 
@@ -23,6 +27,7 @@
         padding: var(--space-xxl)
 
   +e('action')
+    display: flex
     /* Distribute */
     +m('distribute')
       +v('default')
