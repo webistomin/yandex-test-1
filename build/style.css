@@ -1038,3 +1038,53 @@ picture {
   .history__actions {
     margin-top: 30px;
     margin-bottom: 10px; }
+
+.commercial {
+  width: 100%;
+  max-width: 360px;
+  min-height: 430px; }
+  .commercial__figure {
+    width: 100%;
+    height: 180px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border: 3px solid var(--color-border); }
+  .commercial__text {
+    width: 100%;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-top: -10px;
+    margin-bottom: var(--space-l); }
+    .commercial__text .text__word {
+      margin-top: 10px; }
+  .commercial__info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .commercial__navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .commercial__dot {
+    width: 8px;
+    height: 8px;
+    background-color: var(--color-accent); }
+    .commercial__dot:not(:last-of-type) {
+      margin-right: var(--space-xs); }
