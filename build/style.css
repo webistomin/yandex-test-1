@@ -705,15 +705,15 @@ picture {
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center; }
-    .list__item_indent-t_m {
+    .list__item_indent-t_m:not(:last-of-type) {
       margin-top: var(--space-m); }
-    .list__item_indent-b_s {
+    .list__item_indent-b_s:not(:last-of-type) {
       margin-bottom: var(--space-s); }
-    .list__item_indent-b_m {
+    .list__item_indent-b_m:not(:last-of-type) {
       margin-bottom: var(--space-m); }
-    .list__item_indent-b_l {
+    .list__item_indent-b_l:not(:last-of-type) {
       margin-bottom: var(--space-l); }
-    .list__item_indent-b_xl {
+    .list__item_indent-b_xl:not(:last-of-type) {
       margin-bottom: var(--space-xl); }
     .list__item_space-b_s {
       padding-bottom: var(--space-s); }
@@ -1130,8 +1130,6 @@ picture {
     width: 100%;
     height: 160px;
     background-color: var(--color-accent); }
-  .collect__image {
-    border-bottom: 3px solid var(--color-border); }
   .collect__footer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1159,7 +1157,8 @@ picture {
   .collect__meter {
     height: 8px;
     background-color: var(--color-primary);
-    position: relative; }
+    position: relative;
+    border-bottom: 3px solid var(--color-border); }
   .collect__progress {
     position: absolute;
     left: 0;
@@ -1168,3 +1167,42 @@ picture {
     width: 70%;
     max-width: 100%;
     background-color: var(--color-link); }
+
+.articles__pic {
+  width: 170px;
+  height: 120px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: var(--color-primary); }
+
+.articles__date {
+  margin-bottom: 15px; }
+
+.articles__title {
+  margin-bottom: 24px; }
+
+.articles__text {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-top: -15px; }
+  .articles__text .text__word {
+    margin-top: 15px; }
+
+.articles__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }

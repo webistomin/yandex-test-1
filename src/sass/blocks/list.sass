@@ -37,21 +37,26 @@
     /* indent top */
     +m('indent-t')
       +v('m')
-        margin-top: var(--space-m)
+        &:not(:last-of-type)
+          margin-top: var(--space-m)
 
     /* indent bottom */
     +m('indent-b')
       +v('s')
-        margin-bottom: var(--space-s)
+        &:not(:last-of-type)
+          margin-bottom: var(--space-s)
 
       +v('m')
-        margin-bottom: var(--space-m)
+        &:not(:last-of-type)
+          margin-bottom: var(--space-m)
 
       +v('l')
-        margin-bottom: var(--space-l)
+        &:not(:last-of-type)
+          margin-bottom: var(--space-l)
 
       +v('xl')
-        margin-bottom: var(--space-xl)
+        &:not(:last-of-type)
+          margin-bottom: var(--space-xl)
 
     /* space bottom */
     +m('space-b')

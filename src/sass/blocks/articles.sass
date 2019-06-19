@@ -1,0 +1,26 @@
+.articles
+  +e('pic')
+    width: 170px
+    height: 120px
+    display: inline-flex
+    align-items: center
+    justify-content: center
+    background-color: var(--color-primary)
+
+  +e('date')
+    margin-bottom: 15px
+
+  +e('title')
+    margin-bottom: 24px
+
+  +e('text')
+    display: inline-flex
+    flex-wrap: wrap
+    margin-top: -15px
+
+    .text__word
+      margin-top: 15px
+
+  +e('content')
+    display: flex
+    flex-direction: column
