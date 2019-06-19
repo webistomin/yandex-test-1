@@ -1206,3 +1206,29 @@ picture {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column; }
+
+.offer {
+  width: 100%;
+  max-width: 264px;
+  min-height: 408px; }
+  .offer__partner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .offer__discount {
+    margin-bottom: 20px; }
+  .offer__text {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-top: -14px; }
+    .offer__text .text__word {
+      margin-top: 14px; }
+  .offer__brand-logo {
+    margin-bottom: 178px; }
