@@ -1,0 +1,49 @@
+.collect
+  width: 100%
+  max-width: 264px
+  min-height: 374px
+
+  +e('figure')
+    display: inline-flex
+    align-items: center
+    justify-content: center
+    width: 100%
+    height: 160px
+    background-color: var(--color-accent)
+
+  +e('image')
+    border-bottom: 3px solid var(--color-border)
+
+  +e('footer')
+    flex-direction: column
+
+  +e('title')
+    display: inline-flex
+    flex-wrap: wrap
+    margin-bottom: 26px
+    margin-top: -15px
+
+    .text__word
+      margin-top: 15px
+
+  +e('description')
+    display: inline-flex
+    flex-wrap: wrap
+    margin-top: -15px
+
+    .text__word
+      margin-top: 15px
+
+  +e('meter')
+    height: 8px
+    background-color: var(--color-primary)
+    position: relative
+
+  +e('progress')
+    position: absolute
+    left: 0
+    top: 0
+    height: inherit
+    width: 70%
+    max-width: 100%
+    background-color: var(--color-link)
