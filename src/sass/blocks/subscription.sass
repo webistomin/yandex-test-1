@@ -1,0 +1,25 @@
+.subscription
+  max-width: 360px
+  width: 100%
+  min-height: 408px
+
+  +e('control')
+    width: 100%
+    flex-direction: column
+
+  +e('input')
+    margin-bottom: var(--space-s)
+
+  +e('info')
+    padding-top: var(--space-xxl)
+
+  +e('text')
+    display: flex
+    flex-wrap: wrap
+
+  +e('title')
+    margin-bottom: var(--space-xxxl)
+
+  +e('subtitle')
+    &:not(:last-of-type)
+      margin-bottom: 28px
