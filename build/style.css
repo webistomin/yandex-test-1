@@ -1257,3 +1257,43 @@ picture {
     margin-bottom: var(--space-xxxl); }
   .subscription__subtitle:not(:last-of-type) {
     margin-bottom: 28px; }
+
+.event {
+  min-height: 333px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  max-width: 560px;
+  width: 100%; }
+  .event__heading {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 20px; }
+  .event__avatar {
+    margin-right: 8px; }
+  .event__title {
+    margin-bottom: 30px; }
+  .event__text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    .event__text .text__word {
+      margin-top: 16px; }
+  .event__description {
+    margin-top: -16px; }
+  .event__footer {
+    padding-top: 0; }

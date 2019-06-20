@@ -1,0 +1,36 @@
+.event
+  min-height: 333px
+  box-sizing: border-box
+  max-width: 560px
+  width: 100%
+
+  +e('heading')
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-bottom: 20px
+
+  +e('avatar')
+    margin-right: 8px
+
+  +e('title')
+    margin-bottom: 30px
+
+  +e('text')
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-wrap: wrap
+
+    & .text__word
+      margin-top: 16px
+
+  +e('description')
+    margin-top: -16px
+
+  +e('footer')
+    padding-top: 0
+
+
+
+
