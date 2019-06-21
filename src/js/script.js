@@ -20,3 +20,9 @@ body.addEventListener('click', (event) => {
   
   openAccordion(accordion);
 });
+
+document.querySelector('.onoffswitch').addEventListener('click', () => {
+  let root = document.documentElement;
+  root.classList.add('theme');
+  root.classList.add('theme_color_project-inverse');
+});

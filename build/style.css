@@ -62,6 +62,15 @@
   :root {
     --gap-default: var(--space-xxxl); } }
 
+:root[theme='project-inverse'] {
+  --color-primary: var(--color-black);
+  --color-accent: var(--color-white);
+  --color-border: var(--color-white);
+  --color-text-primary: var(--color-white);
+  --color-text-secondary: var(--color-white-6);
+  --color-text-tertiary: var(--color-white-3);
+  --color-link: var(--color-lightblue); }
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
 
@@ -308,6 +317,9 @@ picture {
     --color-text-secondary: var(--color-white-6);
     --color-text-tertiary: var(--color-white-3);
     --color-link: var(--color-lightblue); }
+    .theme_color_project-inverse img {
+      -webkit-filter: invert(1);
+      filter: invert(1); }
   .theme_color_project-warning {
     --color-primary: var(--color-orange);
     --color-accent: var(--color-white);
@@ -987,9 +999,6 @@ picture {
   box-sizing: border-box;
   width: 218px;
   min-height: 280px; }
-  .product.theme_color_project-inverse .product__image img {
-    -webkit-filter: invert(1);
-    filter: invert(1); }
   .product__image {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1332,7 +1341,7 @@ picture {
   left: 0;
   right: 0;
   bottom: 0;
-  border: 2px solid var(--color-black);
+  border: 2px solid var(--color-border);
   -webkit-transition: all 0.4s ease-in-out 0s;
   transition: all 0.4s ease-in-out 0s; }
   .onoffswitch__slider::before {
@@ -1362,8 +1371,25 @@ picture {
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding: var(--space-xxxl) var(--gap-default);
-  background-color: var(--color-white); }
+  background-color: var(--color-primary); }
   .header__logotype {
     width: 179px;
     height: 34px;
     background-color: var(--color-text-primary); }
+
+.footer {
+  width: 100%;
+  padding: var(--space-xxxl) var(--gap-default);
+  background-color: var(--color-primary); }
+  .footer__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    max-width: 1144px;
+    margin: 0 auto; }
