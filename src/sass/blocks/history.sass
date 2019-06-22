@@ -3,28 +3,74 @@
   width: 100%
   box-sizing: border-box
 
+  +e('destination')
+    width: 100%
+    margin-bottom: var(--space-l)
+
+    +media(1144px)
+      min-width: 140px
+      width: initial
+      margin-bottom: 0
+
   +e('label')
-    margin-right: 20px
+    width: 100%
+    margin-right: var(--space-l)
 
   +e('date')
     margin-bottom: 10px
 
+  +e('transaction')
+    margin-bottom: 10px
+
+    +media(1144px)
+      margin-bottom: 0
+
   +e('show')
     display: flex
+    flex-direction: column
+
+    +media(1144px)
+      flex-direction: row
 
   +e('open')
+    width: 100%
     margin-left: auto
+
+    +media(1144px)
+      display: inline-flex
+      justify-content: flex-end
+      flex-direction: row
+
+      .text__word
+        width: 100%
 
   +e('text')
     display: flex
+    flex-wrap: wrap
+    margin-top: calc(var(--space-m) * -1)
 
     &:not(:last-of-type)
-      margin-bottom: 16px
+      margin-bottom: var(--space-m)
+
+    .text__word
+      width: 100%
+      margin-top: var(--space-m)
 
   +e('description')
-    padding-top: 26px
+    padding-top: var(--space-xl)
     flex-direction: column
 
   +e('actions')
-    margin-top: 30px
-    margin-bottom: 10px
+    margin-top: var(--space-xxl)
+    margin-bottom: var(--space-s)
+
+    .text
+      width: 100%
+      +e('word')
+        width: inherit
+
+  +e('actions-text')
+    display: inline-flex
+
+    +m('right')
+      justify-content: flex-end

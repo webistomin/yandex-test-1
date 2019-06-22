@@ -1,42 +1,30 @@
 .onoffswitch
+  width: 100%
+  max-width: 97px
+  cursor: pointer
+
+
 
   +e('label')
+    box-sizing: border-box
     position: relative
     display: inline-block
     vertical-align: top
-    width: 97px
+    width: inherit
     height: 32px
-
-  +e('checkbox')
-    +visually-hidden()
-
-    &:checked ~ .onoffswitch__slider
-
-      &::before
-        transform: translateY(-50%) translateX(65px)
-
-  +e('slider')
-    position: absolute
-    cursor: pointer
-    top: 0
-    left: 0
-    right: 0
-    bottom: 0
     border: 2px solid var(--color-border)
     transition: all 0.4s ease-in-out 0s
 
-    &::before
-      position: absolute
-      content: ""
-      height: 24px
-      width: 24px
-      left: 2px
-      top: 50%
-      transform: translateY(-50%)
-      background-color: var(--color-border)
-      transition: all 0.4s ease-in-out 0s
-      backface-visibility: hidden
-
+  +e('slider')
+    position: absolute
+    height: 24px
+    width: 24px
+    left: 2px
+    top: 50%
+    transform: translateY(-50%)
+    background-color: var(--color-border)
+    transition: all 0.4s ease-in-out 0s
+    backface-visibility: hidden
 
 
 

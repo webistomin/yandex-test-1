@@ -11,15 +11,22 @@
     margin-bottom: var(--space-s)
 
   +e('info')
+    margin-bottom: 144px
     padding-top: var(--space-xxl)
+    padding-bottom: 0
 
   +e('text')
     display: flex
     flex-wrap: wrap
+    margin-top: calc(var(--space-m) * -1)
+
+    .text__word
+      width: 100%
+      margin-top: var(--space-m)
 
   +e('title')
     margin-bottom: var(--space-xxxl)
 
   +e('subtitle')
     &:not(:last-of-type)
-      margin-bottom: 28px
+      margin-bottom: var(--line-height-xl)

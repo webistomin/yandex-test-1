@@ -1,26 +1,48 @@
 .articles
+  width: 100%
+  max-width: 420px
+  padding: var(--space-xl)
+
   +e('pic')
     width: 170px
     height: 120px
-    display: inline-flex
-    align-items: center
-    justify-content: center
+    flex-shrink: 0
     background-color: var(--color-primary)
+    margin-left: var(--space-m)
+
+    +media(1144px)
+      margin-left: 0
 
   +e('date')
-    margin-bottom: 15px
+    width: 100%
+    margin-bottom: var(--space-m)
 
   +e('title')
-    margin-bottom: 24px
+    margin-bottom: var(--space-xl)
 
   +e('text')
     display: inline-flex
     flex-wrap: wrap
-    margin-top: -15px
+    justify-content: center
+    margin-top: calc(var(--space-m) * -1)
+    width: 100%
 
     .text__word
-      margin-top: 15px
+      margin-top: var(--space-m)
+      width: 100%
+
+    +media(1144px)
+      justify-content: flex-start
 
   +e('content')
+    width: 100%
     display: flex
     flex-direction: column
+    margin-top: var(--space-m)
+
+  +e('unit')
+    width: 100%
+    flex-direction: column
+
+    +media(1144px)
+     flex-direction: row

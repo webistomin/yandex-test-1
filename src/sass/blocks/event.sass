@@ -8,13 +8,13 @@
     display: flex
     justify-content: center
     align-items: center
-    margin-bottom: 20px
+    margin-bottom: var(--space-l)
 
   +e('avatar')
-    margin-right: 8px
+    margin-right: var(--space-xs)
 
   +e('title')
-    margin-bottom: 30px
+    margin-bottom: var(--space-xxl)
 
   +e('text')
     display: flex
@@ -23,10 +23,11 @@
     flex-wrap: wrap
 
     & .text__word
-      margin-top: 16px
+      width: 100%
+      margin-top: var(--space-m)
 
   +e('description')
-    margin-top: -16px
+    margin-top: calc(var(--space-m) * -1)
 
   +e('footer')
     padding-top: 0

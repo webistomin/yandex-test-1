@@ -2,6 +2,7 @@
   width: 100%
   padding: var(--space-xxxl) var(--gap-default)
   background-color: var(--color-primary)
+  margin: var(--space-xl)
 
   +e('content')
     display: flex
@@ -9,4 +10,14 @@
     justify-content: space-between
     max-width: 1144px
     margin: 0 auto
+
+  +e(text)
+    display: inline-flex
+
+    .text__word
+      width: 100%
+
+    +m('right')
+      margin-left: var(--space-xl)
+      justify-content: flex-end
 

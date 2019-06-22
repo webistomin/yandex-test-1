@@ -8,15 +8,16 @@
     flex-direction: column
 
   +e('discount')
-    margin-bottom: 20px
+    margin-bottom: var(--space-l)
 
   +e('text')
     display: inline-flex
     flex-wrap: wrap
-    margin-top: -14px
+    margin-top: calc(var(--space-m) * -1)
 
     .text__word
-      margin-top: 14px
+      width: 100%
+      margin-top: var(--space-m)
 
   +e('brand-logo')
     margin-bottom: 178px

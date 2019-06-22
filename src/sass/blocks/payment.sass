@@ -1,11 +1,20 @@
 .payment
+  box-sizing: border-box
   margin: auto
   width: 100%
-  box-sizing: border-box
   max-width: 556px
+  background-color: var(--color-primary)
 
   +e('button')
     width: 200px
+    margin-top: var(--space-xl)
 
   +e('label')
-    margin-right: 38px
+    margin-right: var(--space-xxxl)
+
+  +e('btn-label')
+    max-width: 50%
+    margin-top: var(--space-xl)
+
+  +e('footer')
+    margin-top: calc(var(--space-xl) * -1)
