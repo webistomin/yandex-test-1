@@ -1,6 +1,7 @@
 .product
   box-sizing: border-box
-  width: 218px
+  width: 100%
+  //max-width: 218px
   min-height: 280px
 
   +e('image')
@@ -8,7 +9,8 @@
     height: 160px
 
   +e('footer')
+    padding-bottom: 20px
     flex-direction: column
 
   +e('description')
-    margin-top: var(--space-m)
+    margin-top: var(--space-s)

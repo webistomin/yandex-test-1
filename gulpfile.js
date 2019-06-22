@@ -9,7 +9,7 @@ const babel = require('gulp-babel');
 const stripCssComments = require('gulp-strip-css-comments');
 
 gulp.task('html', () => {
-  return gulp.src('./src/*.html')
+  return gulp.src('./src/**/*.html')
     .pipe(gulp.dest('./build'));
 });
 
@@ -47,7 +47,7 @@ gulp.task('images', () => {
 });
 
 gulp.task('watch', () => {
-  gulp.watch('src/*.html', ['html']);
+  gulp.watch('src/**/*.html', ['html']);
   gulp.watch('src/sass/**/*.sass', ['css']);
   gulp.watch('src/js/**/*.js', ['js']);
   gulp.watch('src/img/*', ['images']);

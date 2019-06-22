@@ -1,8 +1,7 @@
 .payment
   box-sizing: border-box
-  margin: auto
   width: 100%
-  max-width: 556px
+  //max-width: 556px
   background-color: var(--color-primary)
 
   +e('button')
@@ -10,7 +9,12 @@
     margin-top: var(--space-xl)
 
   +e('label')
-    margin-right: var(--space-xxxl)
+    flex-shrink: 0
+    margin-bottom: var(--space-xl)
+    //margin-right: var(--space-xxxl)
+
+    +media(1140px)
+      margin-bottom: 0
 
   +e('btn-label')
     max-width: 50%
@@ -18,3 +22,13 @@
 
   +e('footer')
     margin-top: calc(var(--space-xl) * -1)
+
+  +e('control')
+    flex-wrap: wrap
+
+    +media(1140px)
+      flex-wrap: nowrap
+
+  +e('header')
+    padding-top: 28px
+
