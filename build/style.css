@@ -216,7 +216,8 @@ body {
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: none; }
+  -webkit-text-size-adjust: none;
+  background-color: var(--color-primary); }
 
 img {
   max-width: 100%;
@@ -299,6 +300,11 @@ picture {
   transition: all 0.3s ease-in-out; }
 
 .text {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   width: 100%;
   
   
@@ -318,8 +324,9 @@ picture {
       .text_size_s .text__word_width_l {
         max-width: 100px; }
   .text_size_m {
-    font-size: var(--font-size-m); }
+    margin-top: calc(var(--font-size-m) * -1); }
     .text_size_m .text__word {
+      margin-top: var(--font-size-m);
       height: 8px;
        }
       .text_size_m .text__word_width_s {
@@ -329,8 +336,9 @@ picture {
       .text_size_m .text__word_width_l {
         max-width: 114px; }
   .text_size_l {
-    font-size: var(--font-size-l); }
+    margin-top: calc(var(--font-size-l) * -1); }
     .text_size_l .text__word {
+      margin-top: var(--font-size-l);
       height: 10px;
        }
       .text_size_l .text__word_width_s {
@@ -377,6 +385,8 @@ picture {
     background-color: var(--color-text-tertiary); }
   .text_view_link .text__word {
     background-color: var(--color-link); }
+  .text__word {
+    width: 100%; }
 
 .theme {
   
@@ -487,7 +497,7 @@ picture {
       .theme_gap_small {
         --gap-default: var(--space-xxxl); } }
 
-.layout__container {
+.layout {
   min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -495,19 +505,21 @@ picture {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
-  flex-direction: column;
-  width: 90%;
-  
-   }
-  @media (min-width: 1144px) {
-    .layout__container {
-      width: 100%; } }
-  .layout__container_align_center {
-    margin: 0 auto; }
-  .layout__container_size_s {
-    max-width: var(--max-width-s); }
-  .layout__container_size_m {
-    max-width: var(--max-width-m); }
+  flex-direction: column; }
+  .layout__container {
+    width: 90%;
+    margin: 0 auto;
+    
+     }
+    @media (min-width: 1144px) {
+      .layout__container {
+        width: 100%; } }
+    .layout__container_align_center {
+      margin: 0 auto; }
+    .layout__container_size_s {
+      max-width: var(--max-width-s); }
+    .layout__container_size_m {
+      max-width: var(--max-width-m); }
 
 .grid {
   display: grid;
@@ -871,18 +883,24 @@ picture {
       margin-right: var(--space-l); }
 
 .section {
+  background-color: var(--color-primary);
   
    }
   .section_indent-b_xxl {
     margin-bottom: var(--space-xxl); }
   .section_indent-b_xxxl {
     margin-bottom: var(--space-xxxl); }
+  .section_indent-b_xxxxl {
+    margin-bottom: var(--space-xxxxl); }
   .section_space-v_xxl {
     padding-top: var(--space-xxl);
     padding-bottom: var(--space-xxl); }
   .section_space-v_xxxl {
     padding-top: var(--space-xxxl);
     padding-bottom: var(--space-xxxl); }
+  .section_space-v_xxxxl {
+    padding-top: var(--space-xxxxl);
+    padding-bottom: var(--space-xxxxl); }
 
 .avatar {
   background-color: var(--color-text-primary);
@@ -1206,16 +1224,15 @@ picture {
 
 .cover {
   width: 100%;
-  max-width: 360px;
   min-height: 408px; }
   .cover__figure {
-    height: 180px; }
+    height: 186px; }
   .cover__preview {
     padding: 0 var(--space-xxl); }
   .cover__name {
-    margin-bottom: var(--space-xxl); }
+    margin-bottom: var(--font-size-xxl); }
   .cover__info {
-    padding-bottom: var(--space-l); }
+    padding-bottom: var(--space-m); }
 
 .collect {
   width: 100%;
@@ -1467,7 +1484,7 @@ picture {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding: var(--space-xxxl) var(--gap-default);
+  padding: var(--space-xxxl) 0;
   background-color: var(--color-primary);
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
@@ -1480,7 +1497,7 @@ picture {
 
 .footer {
   width: 100%;
-  padding: var(--space-xxxl) var(--gap-default);
+  padding: var(--space-xxxl) 0;
   background-color: var(--color-primary);
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }

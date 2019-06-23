@@ -1,4 +1,6 @@
 .text
+  display: inline-flex
+  flex-wrap: wrap
   width: 100%
   /* align */
   +m('align')
@@ -23,9 +25,10 @@
           max-width: 100px
 
     +v('m')
-      font-size: var(--font-size-m)
+      margin-top: calc(var(--font-size-m) * -1)
 
       .text__word
+        margin-top: var(--font-size-m)
         height: 8px
         /* width */
         &_width_s
@@ -38,9 +41,10 @@
           max-width: 114px
 
     +v('l')
-      font-size: var(--font-size-l)
+      margin-top: calc(var(--font-size-l) * -1)
 
       .text__word
+        margin-top: var(--font-size-l)
         height: 10px
         /* width */
         &_width_s
@@ -113,3 +117,6 @@
     +v('link')
       .text__word
         background-color: var(--color-link)
+
+  +e('word')
+    width: 100%
