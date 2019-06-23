@@ -10,7 +10,6 @@
   /* size */
   +m('size')
     +v('s')
-      font-size: var(--font-size-s)
 
       .text__word
         height: 7px
@@ -25,10 +24,8 @@
           max-width: 100px
 
     +v('m')
-      margin-top: calc(var(--font-size-m) * -1)
 
       .text__word
-        margin-top: var(--font-size-m)
         height: 8px
         /* width */
         &_width_s
@@ -41,10 +38,8 @@
           max-width: 114px
 
     +v('l')
-      margin-top: calc(var(--font-size-l) * -1)
 
       .text__word
-        margin-top: var(--font-size-l)
         height: 10px
         /* width */
         &_width_s
@@ -57,7 +52,6 @@
           max-width: 138px
 
     +v('xl')
-      font-size: var(--font-size-xl)
 
       .text__word
         height: 11px
@@ -72,7 +66,6 @@
           max-width: 154px
 
     +v('xxl')
-      font-size: var(--font-size-xxl)
 
       .text__word
         height: 13px
@@ -99,6 +92,36 @@
 
     +v('p')
       margin: 15px 0 21px
+
+      &.text_size_s
+        margin-top: calc(var(--font-size-s) * -1)
+
+        .text__word
+          margin-top: var(--font-size-s)
+
+      &.text_size_m
+        margin-top: calc(var(--font-size-m) * -1)
+
+        .text__word
+          margin-top: var(--font-size-m)
+
+      &.text_size_l
+        margin-top: calc(var(--font-size-l) * -1)
+
+        .text__word
+          margin-top: var(--font-size-l)
+
+      &.text_size_xl
+        margin-top: calc(var(--font-size-xl) * -1)
+
+        .text__word
+          margin-top: var(--font-size-xl)
+
+      &.text_size_xxl
+        margin-top: calc(var(--font-size-xxl) * -1)
+
+        .text__word
+          margin-top: var(--font-size-xxl)
 
   /* view */
   +m('view')

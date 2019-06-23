@@ -28,7 +28,8 @@
       --color-text-tertiary: var(--color-white-3)
       --color-link: var(--color-lightblue)
 
-      img
+      img:not(.commercial__img),
+      img:not(.cover__img)
         filter: invert(1)
 
     +v('project-warning')
@@ -110,20 +111,10 @@
     +v('xxxxl')
       padding: var(--space-xxxxl)
 
-
-  /* BREAKPOINTS */
-  +m('breakpoint')
-    +v('default')
-      display: flex
-      flex-direction: column
-
-      +media(var(--breakpoint-desktop))
-        flex-direction: row
-
   /* GAPS */
   +m('gap')
     +v('small')
       margin: var(--gap-default)
 
-      +media(var(--breakpoint-desktop))
+      +media(1144px)
         --gap-default: var(--space-xxxl)
