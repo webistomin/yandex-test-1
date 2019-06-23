@@ -548,10 +548,10 @@ picture {
         grid-row-gap: initial;
         grid-column-gap: 24px; } }
   .grid_col-gap_full {
-    grid-row-gap: 36px; }
+    grid-row-gap: 32px; }
     @media (min-width: 1144px) {
       .grid_col-gap_full {
-        grid-column-gap: 36px; } }
+        grid-column-gap: 32px; } }
   .grid_row-gap_half {
     grid-column-gap: 20px; }
   .grid_row-gap_full {
