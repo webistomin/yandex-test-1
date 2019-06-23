@@ -1236,7 +1236,6 @@ picture {
 
 .collect {
   width: 100%;
-  max-width: 264px;
   min-height: 374px; }
   .collect__figure {
     width: 100%;
@@ -1283,9 +1282,7 @@ picture {
     background-color: var(--color-link); }
 
 .articles {
-  width: 100%;
-  max-width: 420px;
-  padding: var(--space-xl); }
+  width: 100%; }
   .articles__pic {
     width: 170px;
     height: 120px;
@@ -1298,9 +1295,9 @@ picture {
         margin-left: 0; } }
   .articles__date {
     width: 100%;
-    margin-bottom: var(--space-m); }
+    margin-bottom: var(--space-xs); }
   .articles__title {
-    margin-bottom: var(--space-xl); }
+    margin-bottom: var(--space-m); }
   .articles__text {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
@@ -1345,7 +1342,6 @@ picture {
 
 .offer {
   width: 100%;
-  max-width: 264px;
   min-height: 408px; }
   .offer__partner {
     display: -webkit-box;
@@ -1371,7 +1367,6 @@ picture {
     margin-bottom: 178px; }
 
 .subscription {
-  max-width: 360px;
   width: 100%;
   min-height: 408px; }
   .subscription__control {
