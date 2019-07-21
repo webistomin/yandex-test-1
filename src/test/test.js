@@ -1,8 +1,4 @@
-/**
- * @param  {object} obj — Структура блоков интерфейса в формате BEMJSON
- * @return {string} HTML разметка страницы
- */
-export default function (obj) {
+var templateEngine = function (obj) {
   if (typeof obj !== 'object') {
     console.error(`Необходимо передать объект, а был передан ${typeof obj}`);
     return ''
@@ -32,7 +28,7 @@ export default function (obj) {
       });
       return result;
     }
-  
+    
     let tag = BEMJSON.tag || DEFAULT_TAG;
     let res = `<${tag} ${getClass(BEMJSON, context)}${getAttributes(BEMJSON)}>`;
   
@@ -105,14 +101,63 @@ export default function (obj) {
     let attrs = '';
     
     for (let key in BEMJSON.attrs) {
-        let attr = BEMJSON.attrs[key];
-        
-        if (attr !== null && attr !== undefined) {
-            attrs = `${attrs} ${key}="${attr}"`;
-        }
+      let attr = BEMJSON.attrs[key];
+      
+      if (attr !== null && attr !== undefined) {
+        attrs = `${attrs} ${key}="${attr}"`;
+      }
     }
     return attrs;
   };
   
   return getHTML(obj);
-}
+};
+var should = require('should');
+
+describe('Проверка функции:', function () {
+  it('Корректно добавляет классы', function () {
+    var BEMJSON = {
+      block: 'my-block',
+      mix: [
+        {block: 'other-block', mods: {'mod-name': 'mod-value'}},
+        {block: 'other-block', elem: 'second-elem', elemMods: {'elem-mod-name': 'elem-mod-value'}}
+      ]
+    };
+    templateEngine(BEMJSON).should.equal('<div class="my-block other-block other-block_mod-name_mod-value other-block__second-elem other-block__second-elem_elem-mod-name_elem-mod-value"></div>');
+  });
+  
+  it('Использует правильный тэг', function () {
+    var BEMJSON = {
+      block: 'layout',
+      content: [
+      {
+        block: 'page-header',
+        tag: 'header',
+        content: {
+          block: 'layout',
+          elem: 'container',
+          elemMods: {
+            size: 'm',
+            align: 'center'
+          }
+        }
+      }]
+    };
+    templateEngine(BEMJSON).should.equal('<div class="layout"><header class="page-header"><div class="layout__container layout__container_size_m layout__container_align_center"></div></header></div>');
+  });
+  
+  it('Корректно добавляет аттрибуты', function () {
+    var BEMJSON = {
+      block: 'header',
+      content: {
+        elem: 'img',
+        tag: 'img',
+        attrs: {
+          src: '../img/image-placeholder-inverse.svg',
+          alt: 'Инопланетное существо'
+        }
+      }
+    };
+    templateEngine(BEMJSON).should.equal('<div class="header"><img class="header__img" src="../img/image-placeholder-inverse.svg" alt="Инопланетное существо"></div>');
+  });
+});

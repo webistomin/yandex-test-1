@@ -1,6 +1,7 @@
 .collect
   width: 100%
   min-height: 374px
+  box-sizing: border-box
 
   +e('figure')
     width: 100%
@@ -40,6 +41,16 @@
     left: 0
     top: 0
     height: inherit
-    width: 70%
+    width: 0
     max-width: 100%
     background-color: var(--color-link)
+
+    +m('fill')
+      +v('one-third')
+        width: calc(100% / 3)
+
+      +v('two-third')
+        width: calc((100% / 3) * 2)
+
+      +v('half')
+        width: 50%

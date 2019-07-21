@@ -12,6 +12,13 @@
 
   +e('item')
     display: flex
+
+    +m('direction')
+      +v('row')
+        flex-direction: row-reverse
+
+      +v('column')
+        flex-direction: column
     /* Border */
     +m('border')
       +v('bottom')

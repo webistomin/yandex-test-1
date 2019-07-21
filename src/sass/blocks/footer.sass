@@ -11,11 +11,13 @@
     max-width: 1144px
     margin: 0 auto
 
-  +e(text)
+  +e('text')
     display: inline-flex
+    margin-top: calc(var(--space-m) * -1)
 
     .text__word
       width: 100%
+      margin-top: var(--space-m)
 
     +m('right')
       margin-left: var(--space-xl)

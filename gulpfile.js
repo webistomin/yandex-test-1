@@ -5,12 +5,20 @@ const imagemin = require('gulp-imagemin');
 const del = require('del');
 const gulpSequence = require('gulp-sequence');
 const sass = require('gulp-sass');
-const babel = require('gulp-babel');
 const stripCssComments = require('gulp-strip-css-comments');
+const browserSync = require('browser-sync').create();
 
 gulp.task('html', () => {
   return gulp.src('./src/**/*.html')
     .pipe(gulp.dest('./build'));
+});
+
+gulp.task('browser-sync', function() {
+  browserSync.init({
+    server: {
+      baseDir: "./build"
+    }
+  });
 });
 
 gulp.task('css', () => {
@@ -29,7 +37,6 @@ gulp.task('css', () => {
 
 gulp.task('js', () => {
   return gulp.src('./src/js/*.js')
-    .pipe(babel())
     .pipe(gulp.dest('./build/'));
 });
 
@@ -57,4 +64,9 @@ gulp.task('clean', () => {
   return del(['build/**/*']);
 });
 
-gulp.task('default', gulpSequence('clean',['html', 'css', 'js', 'images']));
+gulp.task('default', gulpSequence(
+  'clean',
+  ['html', 'css', 'js', 'images'],
+  'browser-sync',
+  'watch'
+));
