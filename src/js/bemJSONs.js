@@ -5904,9 +5904,6 @@ const contentPage = {
       content: [
         {
           block: 'section',
-          mods: {
-            'space-v': 's'
-          },
           tag: 'section',
           content: {
             block: 'layout',

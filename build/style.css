@@ -1035,7 +1035,7 @@ li {
   .cover__preview {
     padding: 0 var(--space-xxl); }
   .cover__name {
-    margin-bottom: var(--font-size-xxl); }
+    margin-bottom: var(--space-xl); }
   .cover__info {
     padding-bottom: var(--space-m); }
 
