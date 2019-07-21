@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="https://travis-ci.com/webistomin/cinema-app">
-    <img src="https://travis-ci.com/webistomin/yandex-test-1.svg">
+    <img src="https://travis-ci.com/webistomin/yandex-test-1.svg?token=CqDseQbTs4cMwNAwVsgp&branch=master">
   </a>
 </p>
 
@@ -14,6 +14,7 @@
   Тестовое задание для ШРИ 2019. Реализуйте дизайн-систему
 </p>
    
+## Команды   
 <table id="development-setup">
   <thead>
     <tr>
